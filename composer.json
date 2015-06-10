@@ -1,0 +1,33 @@
+{
+  "name": "php-weekly/issue6",
+  "type": "project",
+  "description": "Issue # 6 challenge",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Edward Pfremmer",
+      "email": "epfremme@nerddery.com"
+    }
+  ],
+  "config": {
+    "bin-dir": "bin"
+  },
+  "require": {
+    "php": ">=5.5",
+    "symfony/console": "^2.7"
+  },
+  "autoload": {
+    "psr-0": { "": "src/" }
+  },
+  "require-dev": {
+    "kherge/box": "~2.0"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "bin/box build"
+    ],
+    "post-update-cmd": [
+      "bin/box build"
+    ]
+  }
+}
